@@ -1,13 +1,14 @@
 ---
-title: "Paper Title Number 1"
+title: "Multivariate Modeling of Quasar Variability with an Attention-based Variational Autoencoder"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/mscr_thesis
+excerpt: 'This thesis investigated novel methods for modeling irregular & multivariate time series data of Active Galactic Nuclei (AGN), for the sake of improving both existing techniques for reverberation mapping  and anomaly detection.'
+date: 2024-01-05
+venue: 'Durham e-Theses'
+paperurl: 'https://etheses.dur.ac.uk/15299/'
+citation: "M. Lowery, &quot;Multivariate Modeling of Quasar Variability with an Attention-based Variational Autoencoder,&quot; Master’s thesis, Durham University, 2024."
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Abstract
+---
+This thesis applied HeTVAE, an attention-based VAE neural network capable of multivariate modeling of time series, to a dataset of several thousand multi-band AGN light curves from ZTF and was one of the first attempts to use a neural network to harness the stochastic light curves in their multivariate form. Whereas standard models of AGN variability make prior assumptions, HeTVAE uses no prior knowledge and is able to learn the data distribution in a regularized latent space, reading semantic information via its up-to-date self-supervised training regimen. We have successfully created a dataset class for preprocessing the irregular multivariate time series and in order to interface with the quasi-off-the-shelf network more conveniently. Also, we have trained several different model iterations using one, two or all three of the filter dimensions from ZTF on Durham’s NCC compute cluster, while configuring useful hyper parameter choices to work robustly for the astronomical dataset. In the network's training, we employed the Adam optimizer with a reduce-on-plateau learning rate schedule and a KL-annealing schedule optimize the VAE’s performance. In experimenting, we show how the VAE has learned the data distribution of the light curves by generating simulated light curves and its interpretability by visualizing attention scores and by visualizing the way the light curves are distributed along the continuous latent space using PCA. We show it orders the light curves across a smooth gradient from those those that have both low amplitude short-term variation and high amplitude long-term variation, to those with little variability, to those with both short-term and long-term high-amplitude variation in the condensed space. We also use PCA to display a potential filtering algorithm that enables parsing through large datasets in an intuitive way and present some of the pitfalls of algorithmic bias in anomaly detection. Finally, we fine-tuned the structurally correct but imprecise multivariate interpolations output by HeTVAE to three objects to show how they could improve constraints on time-delay estimates in the context of reverberation mapping for the relatively poor-cadenced ZTF data. In short, HeTVAE's use cases are ranged and it is a step in the right direction as far as being able to help organize and process the millions of AGN light curves incoming from Vera C. Rubin Observatory’s Legacy Survey of Space and Time in their full 6 optical broadband filter multivariate form.
