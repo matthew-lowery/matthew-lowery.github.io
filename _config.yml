@@ -12,9 +12,9 @@ title                    : "Matthew Lowery"
 title_separator          : "-"
 name                     : &name "Matthew Lowery"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://matthew-lowery.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "matthew-lowery/matthew-lowery.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -31,7 +31,7 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=BqiyOdcAAAAJ&hl=en&authuser=1"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0008-7366-1287"
   semantic         : # URL
