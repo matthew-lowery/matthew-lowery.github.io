@@ -8,4 +8,7 @@ date: 2024-07-25
 location: "Palermo, Sicily"
 ---
 
+
 [The 2nd AMS-UMI International Joint Meeting](https://umi.dm.unibo.it/jm-umi-ams/)
+
+<img src="../images/amsumi_talk.jpg" alt="me" width="200" height="100">
