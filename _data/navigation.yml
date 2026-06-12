@@ -1,17 +1,27 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Home"
+    url: /
+
+  # - title: "Posts"
+  #   url: /year-archive/
+
+  # - title: "Tutorials"
+  #   url: /tutorials/
+
+  - title: "Google Scholar"
+    url: https://scholar.google.com/citations?user=BqiyOdcAAAAJ&hl=en&authuser=1
 
   - title: "Talks"
     url: /talks/    
 
   # - title: "Teaching"
   #   url: /teaching/    
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
+
     
   - title: "CV"
     url: /cv/
+
+  - title: "Shows"
+    url: /shows/
   

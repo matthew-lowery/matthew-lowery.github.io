@@ -1,0 +1,12 @@
+{% include base_path %}
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    {% for link in site.data.navigation.main %}
+      {% if link.url contains '://' %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {% else %}
+        <a href="{{ base_path }}{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</header>

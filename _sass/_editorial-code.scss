@@ -1,0 +1,79 @@
+.article__body .highlight > pre {
+  max-width: 100%;
+  padding: 1.25rem;
+  overflow-x: auto;
+  color: #f7f5ef;
+  background: #171715;
+  border-left: 6px solid var(--accent);
+  font-size: 0.78em;
+  line-height: 1.45;
+}
+
+.article__body .highlight pre,
+.article__body .highlight table {
+  margin: 0;
+}
+
+.article__body .highlight table {
+  border-collapse: collapse;
+}
+
+.article__body .highlight td {
+  padding: 0;
+  vertical-align: top;
+}
+
+.article__body .rouge-gutter {
+  padding-right: 1rem;
+  color: #77736b;
+  text-align: right;
+  user-select: none;
+}
+
+.article__body .rouge-code {
+  width: 100%;
+}
+
+.article__body code {
+  font-size: 0.85em;
+}
+
+.article__body :not(pre) > code {
+  padding: 0.12em 0.3em;
+  background: #e8e4da;
+}
+
+.highlight .c,
+.highlight .c1,
+.highlight .cm {
+  color: #89857d;
+}
+
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn {
+  color: #64c8eb;
+}
+
+.highlight .s,
+.highlight .s1,
+.highlight .s2 {
+  color: #d8d07b;
+}
+
+.highlight .m,
+.highlight .mi,
+.highlight .mf {
+  color: #e89d79;
+}
+
+.highlight .nc,
+.highlight .nf {
+  color: #9ed48f;
+}
+
+.highlight .o,
+.highlight .p {
+  color: #d8d5ce;
+}

@@ -1,0 +1,269 @@
+:root {
+  --paper: #c7ead8;
+  --ink: #000;
+  --muted: #444;
+  --line: #888;
+  --accent: #0000ee;
+  --serif: "Times New Roman", Times, serif;
+  --sans: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  color: #000;
+  background-color: var(--paper);
+  font-family: "Times New Roman", Times, serif;
+  text-rendering: auto;
+}
+
+a,
+a:visited,
+.article-rail a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff0000;
+}
+
+.site-frame {
+  width: min(100% - 24px, 900px);
+  min-height: 100vh;
+  margin: 0 auto;
+  background: transparent;
+  border: 0;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  padding: 18px 0 12px;
+  border-bottom: 1px solid #888;
+  font: 14px/1 Arial, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.site-nav a,
+.site-nav a:last-child {
+  padding: 6px 10px;
+  border: 1px solid #888;
+  border-right: 0;
+  text-decoration: none;
+}
+
+.site-nav a:last-child {
+  border-right: 1px solid #888;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
+  color: #fff;
+  background: #000080;
+}
+
+#content {
+  margin: 0;
+}
+
+.home-minimal {
+  display: grid;
+  min-height: 70vh;
+  place-items: start center;
+  padding-top: 36px;
+}
+
+.home-minimal img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: 50% 42%;
+  border: 1px solid #000;
+}
+
+.article-grid {
+  display: block;
+  padding: 28px 0;
+}
+
+.article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.article__header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #888;
+}
+
+.article__header h1,
+.archive__header h1 {
+  max-width: none;
+  margin: 0 0 8px;
+  color: #000;
+  font: bold 32px/1.1 "Times New Roman", Times, serif;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dek {
+  margin: 8px 0;
+  color: #333;
+  font: 16px/1.35 "Times New Roman", Times, serif;
+}
+
+.page-meta {
+  margin: 0;
+  color: #444;
+  font: 12px/1.4 Arial, sans-serif;
+}
+
+.page-meta span + span::before {
+  content: " | ";
+}
+
+.article__body {
+  max-width: none;
+  margin: 20px 0 0;
+  font: 17px/1.45 "Times New Roman", Times, serif;
+}
+
+.article__body > p:first-child::first-letter {
+  float: none;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+.article__body h2,
+.article__body h3 {
+  margin: 1.5em 0 0.5em;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0;
+}
+
+.article__body img {
+  height: auto;
+}
+
+.article__resources {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  padding-top: 10px;
+  border-top: 1px solid #888;
+  font: 13px/1 Arial, sans-serif;
+  text-transform: none;
+}
+
+.archive {
+  max-width: 760px;
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.archive__header {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #888;
+}
+
+.archive__content {
+  font-size: 16px;
+}
+
+.archive__subtitle {
+  margin: 24px 0 0;
+  color: #000;
+  font: bold 20px/1 "Times New Roman", Times, serif;
+}
+
+.list__item {
+  border-bottom: 1px solid #ccc;
+}
+
+.archive__item,
+.archive__item:nth-child(even) {
+  display: block;
+  padding: 14px 0;
+  background: transparent;
+}
+
+.archive__item-title {
+  margin: 0 0 4px;
+  font: bold 20px/1.15 "Times New Roman", Times, serif;
+  letter-spacing: 0;
+}
+
+.archive__item-title a {
+  text-decoration: underline;
+}
+
+.archive__item-excerpt {
+  margin-top: 6px;
+  line-height: 1.35;
+}
+
+.page__date,
+.page__meta,
+.archive__item-links {
+  margin: 0;
+  color: #444;
+  font: 12px/1.4 Arial, sans-serif;
+  text-transform: none;
+}
+
+.cv-page {
+  max-width: 900px;
+  margin: 24px auto 0;
+}
+
+.cv-frame {
+  display: block;
+  width: 100%;
+  height: min(78vh, 1100px);
+  border: 1px solid #888;
+}
+
+.cv-note {
+  margin: 10px 0 0;
+  font: 12px/1.4 Arial, sans-serif;
+}
+
+.site-footer {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  padding: 18px 0 28px;
+  color: #000;
+  background: transparent;
+  border-top: 1px solid #888;
+  font: 12px/1 Arial, sans-serif;
+}
+
+@media (max-width: 700px) {
+  .site-frame {
+    width: min(100% - 20px, 900px);
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+  }
+
+  .site-nav a,
+  .site-nav a:last-child {
+    margin: 2px;
+    border: 1px solid #888;
+  }
+
+  .home-minimal {
+    min-height: 60vh;
+  }
+
+}

@@ -1,0 +1,11 @@
+---
+layout: archive
+title: "Tutorials"
+permalink: /tutorials/
+author_profile: false
+---
+
+{% assign tutorials = site.tutorials | sort: "order" %}
+{% for post in tutorials %}
+  {% include archive-single.html %}
+{% endfor %}

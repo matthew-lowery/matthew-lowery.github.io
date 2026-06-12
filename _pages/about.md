@@ -1,23 +1,49 @@
 ---
+layout: default
 permalink: /
-title: "About me"
-author_profile: true
-redirect_from: 
+title: "Matthew Lowery"
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a second year Ph.D. Student in Computer Science both affiliated with The Kahlert School of Computing [SoC](https://www.cs.utah.edu) and Scientific Computing and Imaging Institute [SCI](https://www.sci.utah.edu/) at The University of Utah. I am advised by [Dr. Varun Shankar](https://users.cs.utah.edu/~shankar/) under the [Utah Digital Twin Lab](https://digitaltwin.cs.utah.edu/) and [Dr. Shandian Zhe](https://users.cs.utah.edu/~zhe/).
+<div class="photo-columns photo-columns--home">
+  <img src="{{ site.baseurl }}/IMG_0754.jpeg" alt="" loading="lazy">
+  <img src="{{ site.baseurl }}/IMG_0778.jpeg" alt="" loading="lazy">
+  <img src="{{ site.baseurl }}/IMG_7347.jpeg" alt="" loading="lazy">
+  <img src="{{ site.baseurl }}/IMG_6973.jpeg" alt="" loading="lazy">
+  <img src="{{ site.baseurl }}/IMG_0829.jpeg" alt="" loading="lazy">
+  <img src="{{ site.baseurl }}/IMG_7493.jpeg" alt="" loading="lazy">
+</div>
 
-My research interests include, but are not limited to:
-* SciML: Operator Learning, Physics-informed ML 
-* Probabalistic Learning
-* kernel methods
+<section class="home-bio">
+  <h1>About me</h1>
 
-Previously I completed my masters at Durham University, where my thesis investigated novel methods for modeling irregular & multivariate time series data of Active Galactic Nuclei (AGN) with the goal of improving existing reverberation mapping techniques. A poster I presented for this work at UChicago's [AI + Science Summer School](https://datascience.uchicago.edu/events/ai-science-summer-school-2023/) can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vTejV4YIXShOr6Lx56WlS0E73Dhya-NTqcycXGygBc3mflo6bYvwq2xEEx9z8F1TdwIh358MqnDkxbJ/pub?start=false&loop=false&delayms=60000).
+  <p>
+    I am a third-year Ph.D. student in Computer Science, affiliated with the
+    <a href="https://www.cs.utah.edu">Kahlert School of Computing</a> and the
+    <a href="https://www.sci.utah.edu/">Scientific Computing and Imaging Institute</a>
+    at the University of Utah. I am advised by
+    <a href="https://users.cs.utah.edu/~shankar/">Dr. Varun Shankar</a> through the
+    <a href="https://digitaltwin.cs.utah.edu/">Utah Digital Twin Lab</a> and by
+    <a href="https://users.cs.utah.edu/~zhe/">Dr. Shandian Zhe</a>.
+  </p>
 
-Some of my recent graduate coursework:
-* Probabilistic Machine Learning (CS 6190)
-* Advanced Scientific Computing II (CS 6220)
-* Computational Geometry (CS 6160)
-* Advanced Optimization Algorithms (ECE 6960)
+  <p>My research interests include:</p>
+
+  <ul>
+    <li>Kernel methods for operator learning</li>
+    <li>Meshless methods</li>
+    <li>Scientific machine learning</li>
+    <li>Probabilistic learning</li>
+  </ul>
+
+  <p class="home-links">
+    <a href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub">
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn">
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
+    </a>
+  </p>
+</section>
